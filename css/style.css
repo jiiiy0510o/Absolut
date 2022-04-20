@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Vitro_core";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: top;
+}
+button {
+  border: none;
+  background-color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background: url("../images/brush.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 99;
+}
+main {
+  width: 100%;
+  height: 300vh;
+  margin-top: 50px;
+}
+.absol_logo {
+  width: 45%;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  padding: 13px;
+  font-family: "Hahmlet-Black";
+}
+.nav {
+  width: 55%;
+}
+
+.nav li {
+  padding: 13px;
+  display: inline-block;
+  font-weight: 700;
+}
+.menu_bar {
+  display: none;
+}
+
+.big_img_box {
+  position: relative;
+}
+.big_img_text {
+  width: 46%;
+  position: absolute;
+  color: white;
+  top: 28%;
+  right: 6%;
+  text-align: center;
+}
+.big_img_text span {
+  font-size: 4.6vw;
+  font-weight: 900;
+  font-family: "Vitro_core";
+  letter-spacing: 1px;
+}
+.big_img_text p {
+  padding: 28px;
+  font-weight: 600;
+  font-size: 1.4vw;
+}
+.primary_product {
+  width: 76%;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-weight: 600;
+}
+.primary_product > span {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(66, 82, 132);
+  margin-bottom: 30px;
+}
+.grid_box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+}
+.grid_box img {
+  width: 100%;
+  margin-top: 40px;
+}
+.absolute_product:hover {
+  transform: scale(1.01);
+  overflow: hidden;
+  color: rgb(123, 137, 184);
+}
+.voice_img_box {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .menu_bar {
+    width: 10%;
+    padding: 8px;
+    display: block;
+    font-size: 24px;
+  }
+}
