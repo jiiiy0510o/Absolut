@@ -1,0 +1,96 @@
+.main_wrapper {
+  width: 100%;
+}
+.primary_product > span:first-child {
+  font-family: "Vitro_core";
+  font-size: 7vw;
+  font-weight: 900;
+}
+.primary_product > span:nth-child(2) {
+  font-size: 6vw;
+  font-weight: 700;
+}
+.primary_product p {
+  font-size: 20px;
+  padding: 26px;
+  font-weight: 300;
+}
+.slide {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  font-weight: 400;
+}
+.slide_box {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  border-radius: 36px;
+  background-color: #ddd;
+  margin: 10px;
+}
+.circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+}
+.product_grid_box {
+  margin-top: 30px;
+}
+.all_product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.all_product img {
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+  }
+  .menu_bar {
+    padding: 8px 20px;
+    display: block;
+    font-size: 24px;
+  }
+  .primary_product {
+    padding: 30px;
+  }
+  .primary_product > p {
+    font-size: 16px;
+  }
+  .mini_menu {
+    display: none;
+  }
+  .slide_box {
+    position: relative;
+    width: 54px;
+    height: 28px;
+  }
+  .circle {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+  }
+  .all_product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .absolute_product span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

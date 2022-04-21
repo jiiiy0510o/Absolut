@@ -7,25 +7,32 @@
     <title>Absolut Vodka | Swedish Vodka</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <script src="https://kit.fontawesome.com/06a873e6b2.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <span class="absol_logo">ABSOLUT.</span>
-        <ul class="nav">
-          <li><a href="">제품</a></li>
-          <li><a href="">칵테일</a></li>
-          <li><a href="">뉴스&이벤트</a></li>
+        <ul class="mini_menu">
+          <li><a href="#">제품</a></li>
+          <li><a href="#">칵테일</a></li>
+          <li><a href="news.html">뉴스 & 이벤트</a></li>
+          <li><a href="#">앱솔루트 스토리</a></li>
         </ul>
-        <span class="menu_bar"><i class="fa-solid fa-bars"></i></span>
+        <div class="header_wrap">
+          <span class="absol_logo"><a title="메인홈페이지" href="index.html">ABSOLUT.</a></span>
+          <ul class="nav">
+            <li><a title="제품" href="product.html">제품</a></li>
+            <li><a href="#">칵테일</a></li>
+            <li><a href="news.html">뉴스&이벤트</a></li>
+          </ul>
+          <span class="menu_bar"><i class="fa-solid fa-bars"></i></span>
+        </div>
       </header>
       <main class="main_wrapper">
         <div class="big_img_box">
           <picture>
             <source media="(max-width:500px)" srcset="./images/juice.jpg" />
-            <source media="(max-width:800px)" srcset="./images/top789.jpg" />
-            <source media="(max-width:1200px)" srcset="./images/top1024.jpg" />
-            <source media="(mas-width:1920px)" srcset="../images/top1920.jpg" />
             <img src="./images/top1920.jpg" alt="딸기 주스" />
           </picture>
           <div class="big_img_text">
@@ -67,9 +74,6 @@
         <div class="big_img_box">
           <picture>
             <source media="(max-width:500px)" srcset="./images/voice520.jpg" />
-            <source media="(max-width:800px)" srcset="./images/voice1024.jpg" />
-            <source media="(max-width:1200px)" srcset="./images/voice1920.jpg" />
-            <source media="(mas-width:1920px)" srcset="../images/voice1920.jpg" />
             <img src="./images/voice1920.jpg" alt="앱솔루트 보이스" />
           </picture>
           <div class="big_img_text">
@@ -109,14 +113,12 @@
         </div>
         <div class="big_img_box">
           <picture>
-            <source media="(max-width:500px)" srcset="./images/flavors.jpg" />
-            <source media="(max-width:800px)" srcset="./images/flavors.jpg" />
-            <source media="(max-width:1200px)" srcset="./images/flavors.jpg" />
-            <source media="(mas-width:1920px)" srcset="../images/flavors.jpg" />
+            <source media="(max-width:500px)" srcset="./images/flavors520.jpg" />
+
             <img src="./images/flavors.jpg" alt="앱솔루트 보드카" />
           </picture>
           <div class="big_img_text">
-            <br /><br /><br /><br /><br />
+            <br /><br />
             <span>앱솔루트 보드카</span>
             <p>세상에서 가장 유명한 보드카, 앱솔루트의 모든 맛을 만나보세요</p>
             <button>탐색하기</button>
@@ -124,20 +126,62 @@
         </div>
         <div class="big_img_box">
           <picture>
-            <source media="(max-width:500px)" srcset="./images/drinks_right.jpg" />
-            <source media="(max-width:800px)" srcset="./images/drinks_right.jpg" />
-            <source media="(max-width:1200px)" srcset="./images/drinks_right.jpg" />
-            <source media="(mas-width:1920px)" srcset="../images/drinks_right.jpg" />
+            <source media="(max-width:500px)" srcset="./images/drinks_right520.jpg" />
+
             <img src="./images/drinks_right.jpg" alt="앱솔루트 칵테일" />
           </picture>
           <div class="big_img_text">
-            <br /><br /><br /><br /><br />
+            <br /><br />
             <span>앱솔루트 칵테일</span>
             <p>최고의 칵테일과 레시피를 확인하세요</p>
             <button>탐색하기</button>
           </div>
         </div>
+        <div class="summary_absolut">
+          <div class="summary_title">
+            <img src="./images/products.jpg" alt="제품" />
+            <span>제품</span>
+          </div>
+          <div class="summary_title">
+            <img src="./images/promo.jpg" alt="칵테일" />
+            <span>칵테일</span>
+          </div>
+          <div class="summary_title">
+            <img src="./images/story.jpg" alt="앱솔루트스토리" />
+            <span>앱솔루트스토리</span>
+          </div>
+          <div class="summary_title">
+            <img src="./images/disco.jpg" alt="콜라보레이션" />
+            <span>Absolut Collaborations</span>
+          </div>
+        </div>
       </main>
+      <footer>
+        <div class="footer_info">
+          <div class="absol_sns">
+            <div class="absol_logo">ABSOLUT.</div>
+            <div class="company">The Absolut Company</div>
+            <div class="sns">
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="nation">
+              KOREA·KOREAN <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <ul class="policy">
+              <li>개인정보 처리방침</li>
+              <li>Cookies Policy</li>
+              <li>기업이념</li>
+              <li>Interest-Based Ads</li>
+              <li>ⓒ 2022 The Absolut Company. 저작권이 보호됩니다.</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
