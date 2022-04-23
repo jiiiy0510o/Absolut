@@ -33,17 +33,21 @@
     overflow-x: hidden;
   }
   header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: 50px;
     background-image: url("../images/brush.jpg");
   }
   .mini_menu {
     position: absolute;
     padding-top: 20px;
     top: 50px;
+    display: none;
+  }
+  .menu_bar {
     display: block;
+    padding: 15px 20px;
   }
   .news_img_text {
     position: absolute;

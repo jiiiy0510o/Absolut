@@ -1,12 +1,11 @@
 $(document).ready(function () {
-  $(".menu_bar i").toggle(
-    function () {
-      $("header").css("height", "100vh");
-      $("mini_menu").slideDown();
-    },
-    function () {
-      $("header").css("height", "50px");
-      $("mini_menu").slideUp();
-    }
-  );
+  $(".menu_bar").click(function () {
+    $(".mini_menu").slideToggle("fast");
+  });
+
+  $("input").click(function () {
+    $(".korea_product").toggle("500", function () {
+      $(".korea_product").show();
+    });
+  });
 });
