@@ -3,9 +3,11 @@ $(document).ready(function () {
     $(".mini_menu").slideToggle("fast");
   });
 
-  $("input").click(function () {
-    $(".korea_product").toggle("500", function () {
-      $(".korea_product").show();
-    });
+  $(".slide").click(function () {
+    if ($("#chk1").is(":checked") == true) {
+      $(".all_product").addClass("product_hide");
+    } else if ($("#chk1").is(":checked") == false) {
+      $(".all_product").removeClass("product_hide");
+    }
   });
 });
