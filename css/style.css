@@ -223,6 +223,7 @@ footer {
 .nation {
   width: 40%;
   padding: 0px 20px;
+  cursor: pointer;
 }
 .nation i {
   padding: 0 1%;
@@ -251,6 +252,7 @@ footer {
   position: absolute;
   right: 6%;
   top: 12%;
+  cursor: pointer;
 }
 .nation_all > span {
   display: block;

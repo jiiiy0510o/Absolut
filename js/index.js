@@ -14,7 +14,7 @@ $(document).ready(function () {
   $(".nation").click(function () {
     $(".nation_all").slideToggle("fast");
   });
-  $(".nation").click(function () {
+  $(".chosen_nation>span").click(function () {
     $(".nation_all").slideToggle("fast");
   });
 });
