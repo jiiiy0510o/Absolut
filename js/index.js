@@ -10,4 +10,11 @@ $(document).ready(function () {
       $(".all_product").removeClass("product_hide");
     }
   });
+
+  $(".nation").click(function () {
+    $(".nation_all").slideToggle("fast");
+  });
+  $(".nation").click(function () {
+    $(".nation_all").slideToggle("fast");
+  });
 });
